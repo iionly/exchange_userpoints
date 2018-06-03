@@ -1,0 +1,15 @@
+CHANGELOG
+=========
+
+2.3.0
+-----
+
+- Updated for Elgg 2.3,
+- Polishing up the code,
+- Most likely first published release.
+
+1.8.0
+-----
+
+- Initial release,
+- Most likely never published anywhere.
