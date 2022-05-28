@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+3.0.0
+-----
+
+- Elgg 3.0 required at minimum,
+- Updated for Elgg 3.
+
 2.3.0
 -----
 

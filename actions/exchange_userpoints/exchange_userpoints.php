@@ -39,10 +39,12 @@ if (($points < 1) || ($currentpoints < $points)) {
 // Substract points from user who wants to give the points
 if (elggx_userpoints_subtract($user->getGUID(), $points, $description)) {
 	// Add points to the user who receives the points
-	$access = elgg_set_ignore_access(true);
-	$success = elggx_userpoints_add($recipient_guid, $points, $description);
-	elgg_set_ignore_access($access);
-
+	$success = elgg_call(ELGG_IGNORE_ACCESS, function() use($recipient_guid, $points, $description) {
+		if (elggx_userpoints_add($recipient_guid, $points, $description)) {
+			return true;
+		}
+		return false;
+	});
 	if ($success) {
 		if ($description == '') {
 			$description = elgg_echo('exchange_userpoints:no_description', [$user->name]);

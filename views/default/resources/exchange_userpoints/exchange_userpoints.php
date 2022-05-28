@@ -20,7 +20,7 @@ $form_vars = [
 $content = elgg_view_form('exchange_userpoints/exchange_userpoints', $form_vars);
 
 // Format page
-$body = elgg_view_layout('content', [
+$body = elgg_view_layout('default', [
 	'content' => $content,
 	'filter' => '',
 	'title' => $title,
