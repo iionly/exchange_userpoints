@@ -1,7 +1,7 @@
 Exchange Userpoints Plugin for Elgg 3.0 and newer Elgg 3.X
 ==========================================================
 
-Latest Version: 3.0.0  
+Latest Version: 3.0.1  
 Released: 2022-05-28  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
