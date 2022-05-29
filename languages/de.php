@@ -9,7 +9,7 @@
  */
 
 return [
-	'river:exchange_userpoints:user:default' => "%s hat Benutzerpunkte an %s übertragen.",
+	'river:user:exchange_userpoints' => "%s hat Benutzerpunkte an %s übertragen.",
 
 	'exchange_userpoints:pointfail' => "Bei der Übertragung der Benutzerpunkte ist ein Fehler bei der Anwendung der Userpoints API aufgetreten!",
 	'exchange_userpoints:recipient_error' => "Die Empfänger-Auswahl war ungültig.",

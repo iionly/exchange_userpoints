@@ -1,7 +1,20 @@
 <?php
 
 return [
-	'bootstrap' => \ExchangeUserpointsBootstrap::class,
+	'plugin' => [
+		'name' => 'Exchange Userpoints',
+		'version' => '4.0.0',
+		'dependencies' => [
+			'elggx_userpoints' => [],
+		],
+	],
+	'hooks' => [
+		'register' => [
+			'menu:site' => [
+				'ExchangeUserpointsMenus::ExchangeUserpointsSitemenu' => [],
+			],
+		],
+	],
 	'actions' => [
 		'exchange_userpoints/exchange_userpoints' => ['access' => 'logged_in'],
 	],

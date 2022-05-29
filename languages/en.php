@@ -9,7 +9,7 @@
  */
 
 return [
-	'river:exchange_userpoints:user:default' => "%s gave userpoints to %s.",
+	'river:user:exchange_userpoints' => "%s gave userpoints to %s.",
 
 	'exchange_userpoints:pointfail' => "An error occured within the userpoints API!",
 	'exchange_userpoints:recipient_error' => "The recipient selection was invalid.",
